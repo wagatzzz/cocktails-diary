@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FaCocktail } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';  
-import Navbar from './Navbar';
-import CocktailCard from './CocktailCard';
+import Navbar from '../components/Navbar';
+import CocktailCard from '../components/CocktailCard';
 
 const HomePage = () => {
     const navigate = useNavigate();

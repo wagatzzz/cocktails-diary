@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CocktailCard = ({ cocktail }) => {
-    // Ensure cocktail object exists and has required properties
+    
     if (!cocktail || !cocktail.id || !cocktail.name || !cocktail.image) {
         console.error("CocktailCard received incomplete cocktail data:", cocktail);
         return null; // Don't render if data is invalid
     }
 
-    // Check if ingredients is a string and split it into an array if needed
+    
     const ingredients = Array.isArray(cocktail.ingredients)
         ? cocktail.ingredients
         : cocktail.ingredients ? cocktail.ingredients.split(',').map(ingredient => ingredient.trim()) : [];
@@ -28,7 +28,7 @@ const CocktailCard = ({ cocktail }) => {
                         {ingredients.length > 0 ? (
                             ingredients.map((ingredient, index) => (
                                 <span
-                                    key={ingredient} // Using ingredient as key, assuming it's unique
+                                    key={ingredient} 
                                     className="bg-gray-700 text-sm text-white py-1 px-2 rounded-full"
                                 >
                                     {ingredient}

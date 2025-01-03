@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 
 const LoggedCocktails = () => {
     const [cocktails, setCocktails] = useState([]);
@@ -45,8 +45,6 @@ const LoggedCocktails = () => {
 
         fetchCocktails();
     }, []);
-
-
 
 
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import CocktailCard from './CocktailCard';
-import Navbar from './Navbar';
+import CocktailCard from '../components/CocktailCard';
+import Navbar from '../components/Navbar';
 
 const BookmarkedCocktails = ({ savedCocktails }) => {
-    // Filter saved cocktails to show only those that are bookmarked
+    
     const bookmarkedCocktails = savedCocktails.filter((cocktail) => cocktail.isBookmarked);
      // Retrieve the username from localStorage
      const username = localStorage.getItem('name') || 'Guest';  // Default to 'Guest' if not found

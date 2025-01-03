@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import LandingPage from './LandingPage';
-import LoginPage from './LoginPage';
-import SignupPage from './SignupPage';
-import HomePage from './HomePage';
-import CocktailDetails from './CocktailDetails';
-import LoggedCocktails from './LoggedCocktails';
-import BookmarkedCocktails from './BookmarkedCocktails'; // Import the new component
+import LandingPage from './pages/LandingPage';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
+import HomePage from './pages/HomePage';
+import CocktailDetails from './components/CocktailDetails';
+import LoggedCocktails from './pages/LoggedCocktails';
+import BookmarkedCocktails from './pages/BookmarkedCocktails'; 
 
 const App = () => {
     const [savedCocktails, setSavedCocktails] = useState([]); // Central state for saved cocktails

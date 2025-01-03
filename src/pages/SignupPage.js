@@ -23,7 +23,7 @@ const SignupPage = () => {
             if (response.ok) {
                 // Store the token and the username
                 localStorage.setItem('authToken', result.token);
-                localStorage.setItem('name', formData.name);  // Save formData.name instead of 'name'
+                localStorage.setItem('name', formData.name);  
                 navigate('/home');
             } else {
                 setError(result.message || 'Sign up failed');
